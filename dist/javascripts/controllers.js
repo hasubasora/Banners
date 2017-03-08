@@ -8,15 +8,15 @@ for (var i=0;i<BanLength.length;i++){
 $("ul.anNiu").html(_html);
 */
 //第一个轮播图
-var obj = $("#louCeng1 ul.anNiu li"); //按钮的li
-var objScroll = $("#louCeng1 .leftBanner .bannerL"); //图片的ul
-var rightbot = $("#louCeng1 .leftBanner .banpred"); //右边按钮
-var leftbot = $("#louCeng1 .leftBanner .banNext"); //左边按钮
+var obj = $(".fs-nav li"); //按钮的li
+var objScroll = $(".fs-Group"); //图片的ul
+var rightbot = $(".fs-pred"); //右边按钮
+var leftbot = $(".fs-Next"); //左边按钮
 //第二个轮播图
-var obj2 = $("#louCeng2 ul.anNiu li") //按钮的li
-var objScroll2 = $("#louCeng2 .leftBanner .bannerL"); //图片的ul
-var rightbot2 = $("#louCeng2 .leftBanner .banpred"); //右边按钮
-var leftbot2 = $("#louCeng2 .leftBanner .banNext"); //左边按钮
+// var obj2 = $("#louCeng2 ul.anNiu li") //按钮的li
+// var objScroll2 = $("#louCeng2 .leftBanner .bannerL"); //图片的ul
+// var rightbot2 = $("#louCeng2 .leftBanner .banpred"); //右边按钮
+// var leftbot2 = $("#louCeng2 .leftBanner .banNext"); //左边按钮
 //封装好轮播图层
 function comScroll(obj, objScroll, rightbot, leftbot) {
 
@@ -69,4 +69,4 @@ function comScroll(obj, objScroll, rightbot, leftbot) {
     }
 }
 comScroll(obj, objScroll, rightbot, leftbot);
-comScroll(obj2, objScroll2, rightbot2, leftbot2);
+// comScroll(obj2, objScroll2, rightbot2, leftbot2);

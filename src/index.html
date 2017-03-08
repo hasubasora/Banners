@@ -2,11 +2,19 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="framework\bootstrap.min.css">
-    <script type="text/javascript" src="framework/jquery.1.11.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="framework/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+
+    <script type="text/javascript" src="framework/jquery.2.2.1.min.js"></script>
     <script type="text/javascript" src="framework/bootstrap.min.js"></script>
     <script type="text/javascript" src="framework/vue.js"></script>
     <!--<script type="text/javascript" src="framework/vue.min.js"></script>-->
+    <script type="text/javascript" src="javascripts\controllers.js"></script>
+    <!--[if IE]>
+	  <script type="text/javascript" src="framework/jquery.1.11.1.min.js"></script>
+      <script type="text/javascript" src="framework/html5shiv.min.js"></script>
+	<![endif]-->
+
 
     <script src="javascripts/app.js"></script>
     <title>vuejs</title>
@@ -30,6 +38,25 @@
         <!--绑定模板-->
         <!--绑定模板上面的键-->
         <component v-bind:is="show"></component>
+    </div>
+
+
+    <!--banners-->
+    <div class="fixedStar">
+        <div class="fs-Banners">
+            <span class="fs-Next">&lt;</span>
+            <span class="fs-pred">&gt;</span>
+            <ul class="fs-Group">
+                <li><img src="images/dg_flash1.jpg"></li>
+                <li><img src="images/dg_flash2.jpg"></li>
+                <li><img src="images/dg_flash3.jpg"></li>
+            </ul>
+            <ul class="fs-nav">
+                <li class="hover"></li>
+                <li class=""></li>
+                <li class=""></li>
+            </ul>
+        </div>
     </div>
 </body>
 
