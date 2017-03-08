@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="framework\bootstrap.min.css">
+    <script type="text/javascript" src="framework/jquery.1.11.1.min.js"></script>
+    <script type="text/javascript" src="framework/bootstrap.min.js"></script>
+    <script type="text/javascript" src="framework/vue.js"></script>
+    <!--<script type="text/javascript" src="framework/vue.min.js"></script>-->
+
+    <script src="javascripts/app.js"></script>
+    <title>vuejs</title>
+    <style>
+        .completed {
+            color: chartreuse;
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <nav aria-label="...">
+            <ul class="pager">
+                <li v-for="item in types"><a v-bind:href="'#/'+item.link">{{item.title}}</a></li>
+
+            </ul>
+        </nav>
+        <!--绑定模板-->
+        <!--绑定模板上面的键-->
+        <component v-bind:is="show"></component>
+    </div>
+</body>
+
+
+</html>
