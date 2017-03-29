@@ -14,7 +14,6 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('default', ['jshint'], function() {
-    gulp.start('minifyjs');
     return runSequence(['clean'], ['build'], ['serve', 'watch']);
 });
 
@@ -23,7 +22,7 @@ gulp.task('clean', function(callback) {
 });
 
 gulp.task('build', function(callback) {
-    return runSequence(['compass', 'staticFiles'], callback);
+    return runSequence(['compass', 'minifyjs', 'staticFiles'], callback);
 });
 
 gulp.task('compass', function() {
